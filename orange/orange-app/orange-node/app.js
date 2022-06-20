@@ -26,7 +26,7 @@ app.all('*', (req, res, next) => {
 });
 app.use('/api/user/v1', require('./src/api/user/v1')); //사용자
 app.use('/api/admin/v1', require(`./src/api/admin/v1`)); //admin 
-app.listen(3000, () => {
+app.listen(3000,"192.168.0.12", () => {
     console.log('http://localhost:3000');
     console.info()
 });
